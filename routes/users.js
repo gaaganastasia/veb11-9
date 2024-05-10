@@ -8,7 +8,8 @@ const {
   deleteUser,
   checkIsUserExists,
   checkEmptyNameAndEmail,
-  checkEmptyNameAndEmailAndPassword
+  checkEmptyNameAndEmailAndPassword,
+  hashPassword
 } = require("../middlewares/users.js");
 const {
   sendAllUsers,
@@ -24,6 +25,7 @@ usersRouter.post(
   findAllUsers,
   checkIsUserExists,
   checkEmptyNameAndEmailAndPassword,
+  hashPassword,
   createUser,
   sendUserCreated
 );
